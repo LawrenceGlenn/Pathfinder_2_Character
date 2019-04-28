@@ -1,7 +1,7 @@
 
 const Die = (sides) => {
   const getSides = () => sides;
-  const roll = (times) => {
+  const roll = (times=1) => {
     var total = 0;
     for (var i = 0; i < times; i++) {
     total += (Math.random() * sides) + 1;
